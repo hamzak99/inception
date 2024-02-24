@@ -41,8 +41,8 @@ networks:
 
 volumes:
   wordpress_vol:
-    driver: local
-    driver_opts:
-      type: none
-      device: /home/data/nginx
-      o: bind
+    # driver: local
+    # driver_opts:
+    #   type: none
+    #   device: /home/data/wordpress
+    #   o: bind

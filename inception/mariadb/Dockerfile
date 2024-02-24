@@ -12,11 +12,6 @@ RUN mysql_install_db --user=mysql --datadir=/var/lib/mysql --skip-test-db
 
 RUN chmod +x /script.sh
 
-# ENV MYSQL_ADMIN_PASSWORD=admin
-# ENV MYSQL_DATABASE=db
-# ENV MYSQL_USER_NAME=user
-# ENV MYSQL_USER_PASSWORD=password
-EXPOSE 3306
 
 ENTRYPOINT ["sh", "/script.sh"]
 
